@@ -23,7 +23,7 @@ export default {
       this.apiService.delete(`Products/${id}`, this.products).then((response) => {
         console.log(response)
         this.Inventary()
-        this.$toast.success("Item deletado com sucesso");
+        this.$toast.success("Produto deletado com sucesso");
       })
     }, 
   },

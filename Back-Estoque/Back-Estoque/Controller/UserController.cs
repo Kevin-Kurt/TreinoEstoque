@@ -42,7 +42,6 @@ namespace Back_Estoque.Controllers
 
         [HttpPost]
         [Route("token")]
-        [AllowAnonymous]
         public async Task<IActionResult> GetToken([FromBody] UserModel usr)
         {
             try
@@ -65,7 +64,6 @@ namespace Back_Estoque.Controllers
 
         [HttpGet]
         [Route("list")]
-        [AllowAnonymous]
         public IActionResult List()
         {
             try
